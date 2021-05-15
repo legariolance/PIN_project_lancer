@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+
+    <!-- for material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/5962ba0631.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+
+
+    <title>Home Page</title>
+</head>
+<body>
+   <header class="main-header"> 
+       <!-- main nav -->
+    <nav class="transparent">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo red-text">&nbsp Em's Desserts</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+                <a href="gallery.html" class="waves-effect waves-yellow btn-large transparent yellow-text" >
+                    <i class="far fa-images"></i>&nbspGallery
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/emsdesserts2012" class="waves-effect waves-blue btn-large transparent blue-text" >
+                    <i class="fab fa-facebook"></i>&nbspFacebook
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" class="waves-effect waves-amber btn-large transparent amber-text" >
+                    <i class="fab fa-instagram"></i>&nbspInstagram
+                </a>
+            </li>
+            <li>
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-green btn-large green lime-text modal-trigger" href="#modal1">
+                    <i class="fas fa-paper-plane"></i>&nbspOrder/Inquiry Form
+                </a>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal modal-fixed-footer">
+                    <div class="modal-content">
+                        <h4>Please input your contact details</h4>
+                        <div class="row">
+                            <form class="col s12">
+                              <div class="row">
+                                <div class="input-field col s6">
+                                  <input placeholder="John" id="first_name" type="text" class="validate">
+                                  <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                  <input placeholder="Doe" id="last_name" type="text" class="validate">
+                                  <label for="last_name">Last Name</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <input placeholder="johndoe@gmail.com"id="email" type="email" class="validate">
+                                  <label for="email">Email</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <input placeholder="09123456789"id="email" type="number" class="validate">
+                                  <label for="number">Contact Number/s</label>
+                                </div>
+                              </div>
+                              <label for="inquiryorder_input">Inquiry or Order</label>
+                              <div class="chips chips-autocomplete">
+                                
+                              </div>
+
+
+                            </form>
+                          </div>
+                    </div>
+                    <div id="footmodal" class="modal-footer">
+                        <a class="btn" onclick="M.toast({html: 'Please wait while we process your order.', completeCallback: function(){alert('Your order was accepted! Thank you!')}})">Order</a>
+                        <br>
+                    </div>
+                    </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- sidenav -->
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+            <a href="gallery.html" class="waves-effect waves-yellow btn-large yellow lighten-4 yellow-text" >
+                <i class="far fa-images"></i>Gallery
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/emsdesserts2012" class="waves-effect waves-blue btn-large blue lighten-4 blue-text" >
+                <i class="fab fa-facebook"></i>Facebook
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" class="waves-effect waves-amber btn-large amber lighten-4 amber-text" >
+                <i class="fab fa-instagram"></i>Instagram
+            </a>
+        </li>
+        <li>
+
+            </div>
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-green btn-large green lime-text modal-trigger" href="#modal1">
+                <i class="fas fa-paper-plane"></i>&nbspOrder/Inquiry Form
+            </a>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a class="btn" onclick="M.toast({html: 'Please wait while we process your order.', completeCallback: function(){alert('Your order was accepted! Thank you!')}})">Order</a>
+                <br>
+            </div>
+            </div>
+        </li>
+      </ul>
+
+    </header>
+
+    <br><br><br>
+
+    <div class="container">
+        
+        
+        
+        <!-- slider -->
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="images/cake1.jpg"> 
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/cake2.jpg"> 
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/cake3.jpg"> 
+            <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/cake4.jpg"> 
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/brazos.jpg"> 
+            <div class="caption left-align">
+              <h3>Brazos in Cups</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/khyle_cake.jpg"> 
+            <div class="caption right-align">
+              <h3>Layer Cakes</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/banana.jpg"> 
+            <div class="caption center-align">
+              <h3>Banana Loaf Bread</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/dreamcake.jpg"> 
+            <div class="caption left-align">
+              <h3>Dream Cake</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/tart.jpg"> 
+            <div class="caption right-align">
+              <h3>Fruit Tart</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/cupcakes.jpg"> 
+            <div class="caption center-align">
+              <h3>Cupcakes</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    <!-- end slider -->
+    <br><br><br>
+    <!-- div advertise -->
+    <div id= "advertise" class="row">
+        <div class="col s4">
+          <div class="center promo promo-example">
+            <i class="fas fa-stopwatch large"></i>
+            <p class="promo-caption">On time delivery</p>
+            <p class="light center">We deliver on on time, but when we're late, it's free!</p>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="center promo promo-example">
+            <i class="fas fa-seedling large"></i>
+            <p class="promo-caption">Natural Ingredients Used</p>
+            <p class="light center">No artificial ingredients used on any of our delicacies!</p>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="center promo promo-example">
+            <i class="fas fa-utensils large"></i>
+            <p class="promo-caption">Proven delicious!</p>
+            <p class="light center">We serve food at a reasonable and worth it price!</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- end container -->
+    </div>
+
+
+
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+    //sidenav
+        $('.sidenav').sidenav();
+    //carousel
+    
+        $('.carousel').carousel();
+    //full width carousel
+        $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+      });
+    //media slider
+        $('.slider').slider({
+        duration: 500,
+        interval: 2000
+      });
+    //modal trigger
+        $('.modal').modal();
+
+    //chips 
+    $('.chips').chips();
+  
+    
+  $('.chips-autocomplete').chips({
+    autocompleteOptions: {
+      data: {
+        'Chocolate Cake': null,
+        'Empanada': null,
+        'Fruit Tart': null,
+        'Brownies': null,
+        'Butterscotch': null,
+        'Mango Float': null,
+        'Customized Cake (please input manually with description)': null,
+        'Choco Cupcake': null,
+        'Choco Marble Cupcake': null,
+        'Red Velvet Cake': null,
+        'Red Velvet Cupcake': null,
+        'Red Velvet Brownies': null,
+        'Vanilla Cake': null,
+        'Black Sambo': null
+      },
+      limit: Infinity,
+      minLength: 1
+    }
+  });
+        
+    });
+    
+    //toast
+    M.toast({html: "Welcome to Em's Desserts Offical Webpage!"})
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.main-header
+{
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Lobster Two', cursive;
+    font-size: small;
+    
+}
+
+body
+{
+    background-image: url("../images/bgbody.jpg");
+    background-repeat: no-repeat;
+    
+}
+
+.card-title
+{
+    font-family: 'Cuprum', sans-serif;
+}
+
+.card-content>p
+{
+    font-style: italic;
+    font-family: 'Cuprum', sans-serif;
+
+}
+
+div#advertise.row
+{
+    color:greenyellow;
+    background-image: url("../images/cakeback.jpg");
+    background-position: center center;
+    background-size: auto;
+    
+}
+
+p.promo-caption
+{
+    font-size: x-large;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#modal1
+{
+    background-image: linear-gradient(45deg,#f57f17,#ff6f00, #e65100  );
+}
+
+#footmodal
+{
+    background-image: linear-gradient(45deg,#f57f17,#ff6f00, #e65100  );
+}
